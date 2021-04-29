@@ -10,4 +10,5 @@ git checkout tags/latest_release
 make rootfs
 make stop_file_server
 make start_file_server
+sleep 2
 sudo mynode-local-upgrade "$(hostname -I|awk '{print $1}')"
